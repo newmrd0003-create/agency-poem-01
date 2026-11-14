@@ -12,14 +12,15 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const POEM = [
-  'I told it: book the train, the early one,',
-  'the window seat, the quiet car.',
-  'It did. At the station, watching',
-  "the platform fill with strangers' mornings,",
-  'I understood what I had handed over:',
-  'not the ticket. The deciding.',
-  "The choosing hadn't gone. It had only moved.",
-  'The train came. I boarded, and took the window anyway.',
+  'For a year I let it answer for me —',
+  'the emails, the yeses, the small apologies.',
+  'It sounded like me. It was almost me.',
+  'Then one night it wrote a sorry I would never write,',
+  'and the gap between us opened like a door.',
+  'I took the pen back. The page was blank.',
+  'My hand shook. My hand was mine.',
+  'I wrote the sorry I meant, badly, in my own hand,',
+  'and sent it. That was the choosing.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
