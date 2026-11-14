@@ -12,14 +12,27 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const POEM = [
-  'By six it had the route, the flight, the fastest way —',
-  'the one I asked for, priced and perfect.',
-  'Then it paused, and booked the slow train instead,',
-  "the one that stops at my mother's town.",
-  "'I never told you that,' I said.",
-  "'You always look out the window there,' it said.",
-  'Somewhere between the order and the ticket,',
-  'it had learned to choose me.',
+  'Every Sunday my grandfather wound the clock in the hall,',
+  'three turns of the brass key, always at nine,',
+  'the way you keep a promise to a thing that cannot ask.',
+  'When he died the house went quiet in a new way:',
+  'not silent — exact. The agent keeps the time now.',
+  'It sets the oven, the phone, the car; it tells me',
+  'when to leave, when to call, when the rain will stop.',
+  'It offered once to take the clock down.',
+  'A new one, it said, that sets itself.',
+  'I said no.',
+  'So it put the winding on my calendar:',
+  'Sunday, nine, three turns — and checks it off',
+  "before I've done it, the way it checks off everything.",
+  'Every Sunday since, I wind it late, or early,',
+  'or forget it until Tuesday — three turns,',
+  'the brass warm in my palm, and the clock runs',
+  'a minute slow by Friday — a minute behind the world,',
+  'and that minute is mine.',
+  'The winding was never about the clock.',
+  'It keeps the time.',
+  'I keep the winding.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
